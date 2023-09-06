@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-jeha
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/build-e2e-jbhq-tenant/test-app-phtw/devfile-sample-python-basic-jeha@sha256:180ed770166d0cafd335bc07c36e08e2c4ac800962575eebfdf5a66dde9f6917
+        name: my-python
+        resources: {}
+status: {}
